@@ -1,5 +1,10 @@
-# Environment Files
+# ENVIRONMENT FILES
 *.env
 env
 env/
 bookmark
+
+# INTELLIJ FILES
+.idea/
+idea
+*.idea
