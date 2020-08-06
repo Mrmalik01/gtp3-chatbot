@@ -18,7 +18,7 @@ def ask_ai(question, chat_log=None):
     response = client.create(prompt=prompt,        # The text
                              engine="davinci",     # Most capable engine out of four
                              stop=['\nHuman'],     # When to stop the generating text
-                             temperature=0.8,      # Creative risk of the model for generating risk (0-1)
+                             temperature=0.8,      # Creative risk of the model for generating message (0-1)
                              top_p=1,              # Alternative for controlling the originality and creativity of the generated text
                              frequency_panelty=0,  # Higher the value, higher the model will make effort to not repeating itself
                              presence_panelty=0.6, # Higher the value, higher the model will make effort in talking about new topics
