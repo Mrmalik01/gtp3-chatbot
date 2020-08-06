@@ -1,7 +1,7 @@
 # GPT3-chatbot 🚀
 A SMS-based chatbot engine built using the GPT3 Language model. It allows users to chat with an AI machine through SMS. 
 
-# instructions 
+# Instructions 
 1. Clone the git repository or download the ZIP file.
 1. Get the access token from the OpenAI - https://beta.openai.com/  
 2. Create a file called .env in your root directory and insert the code you received from the OpenAI
