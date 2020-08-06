@@ -1,0 +1,5 @@
+# Environment Files
+*.env
+env
+env/
+bookmark
