@@ -11,9 +11,10 @@ def bot():
     incoming_msg = request.values['Body']
     chat_log = session.get("chat_log")
 
-    #answer = ask_ai(incoming_msg, chat_log)
-    #session['chat_log'] = append_the_conversation(incoming_msg, answer, chat_log)
-    answer = "Hello, I am a bot built by Khizar"
+    answer = ask_ai(incoming_msg, chat_log)
+    session['chat_log'] = append_the_conversation(incoming_msg, answer, chat_log)
+    if answer is None:
+        answer = "Hello, I am a bot built by Khizar"
     response = MessagingResponse()
     response.message(answer)
     print("New message received : {}".format(incoming_msg))
